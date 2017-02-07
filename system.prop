@@ -2,9 +2,9 @@
 audio_hal.period_size=192
 audio.offload.buffer.size.kb=1024
 audio.offload.multiple.enabled=false
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
-av.offload.enable=true
+audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.24bit.enable=false
+av.offload.enable=false
 
 ro.qc.sdk.audio.fluencetype=fluence
 ro.qc.sdk.audio.ssr=false
@@ -14,7 +14,7 @@ persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
 
-rec.playback.conc.disabled=true
+rec.playback.conc.disabled=false
 
 audio.ds1.metainfo.key=273
 dmid=-1286820014
@@ -36,9 +36,9 @@ ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk
-camera.lowpower.record.enable=1
+camera.lowpower.record.enable=0
 persist.camera.HAL3.enabled=1
-media.stagefright.legacyencoder=true
+media.stagefright.legacyencoder=false
 persist.camera.tuning_spec=htc
 
 # Display
@@ -69,9 +69,6 @@ rild.libpath=/system/lib64/libhtc_rilhook.so
 ro.baseband.arch=msm
 ro.ril.telephony.mqanelements=5
 ro.telephony.call_ring.multiple=false
-
-ro.ril.oem.ecclist=911
-ro.ril.oem.nosim.ecclist=911
 
 # Storage
 ro.sys.sdcardfs=true
